@@ -39,6 +39,6 @@ The rebalanced portfolio evidently is older than the bootstrapped portfolio, as 
 The rebalanced portfolio generally contains larger stocks than the bootstrapped one. However the difference is not as pronounced, particularly after 2008 when they are relatively even.
 
 # Conclusion
-The results of the paper can be replicated. It is quite clear that the rebalanced strategy is superior. It is most likely that this is due to age, but further work should be done to confirm this. 
+The results of the paper can be replicated. It is quite clear that the rebalanced strategy is far superior. It is most likely that this is due to age, but further work should be done to confirm this. Either way it is interesting that the rebalanced portfolio is outperforming the bootstrapped one by so much, and there must be an underlying reason for this. 
 
 
