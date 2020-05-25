@@ -6,7 +6,7 @@ See the jupyter notebook for my preliminary findings when working as an undergra
 Two types of portfolios were constructed and evaluated from 1926-2016
 
 # Rebalanced Portfolio
-In the beginning N stocks are selected with equal weights. After each month the stocks are rebalanced so that equal weighting is maintained. This means if the stock appreciated in value, it must be sold in order to get back to its proper equal weighting.
+In the beginning N stocks are selected with equal weights. After each month the stocks are rebalanced so that equal weighting is maintained. This means if the stock appreciated in value, it must be sold in order to get back to its proper equal weighting. Delisted stocks are replaced with new stocks.
 
 # Bootstrapped Portfolio
 Quite simply N new stocks are chosen each month.
