@@ -1,7 +1,7 @@
 # portfolio_simulation
 Using the Wharton CRSP historical stock return database and python to replicate and generate further insights to the findings in the paper "Age Matters": https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3363360
 
-See the jupyter notebook for my preliminary findings when working as an undergraduate researcher on this topic.
+See the jupyter notebook for my preliminary findings when working as an undergraduate researcher on this topic. There were further findings which I have not included in this repo. 
 
 Two types of portfolios were constructed and evaluated from 1926-2016
 
@@ -21,4 +21,24 @@ Other matrices, such as an age matrix and a size matrix were created to extract 
 Additionally a listofavailable dict was created, where the key is the date, and the value is the list of PERMNO's available at that date. This made sampling from the dataset very efficient.
 
 
-# Comparison
+# Annualized Return Comparison
+
+![Bootstrapped vs Rebalanced Performance](comparison.png)
+
+The rebalanced portfolio clearly outperforms the bootstrapped portfolio across 1000 simulations at 4 different portfolio sizes. The higher the portfolio size, the better the return due to the effects of diversification of risks. Cool!
+
+# Age and Size Comparison
+
+![Bootstrapped vs Rebalanced AGE](age.png)
+
+The rebalanced portfolio evidently is older than the bootstrapped portfolio, as stocks are held instead of being swapped monthly. The bootstrapped portfolio represents the average age of the entire universe of stocks.
+
+![Bootstrapped vs Rebalanced SIZE](size.png)
+
+
+The rebalanced portfolio generally contains larger stocks than the bootstrapped one. However the difference is not as pronounced, particularly after 2008 when they are relatively even.
+
+# Conclusion
+The results of the paper can be replicated. It is quite clear that the rebalanced strategy is superior. It is most likely that this is due to age, but further work should be done to confirm this. 
+
+
