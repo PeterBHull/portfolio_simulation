@@ -14,7 +14,7 @@ Quite simply N new stocks are chosen each month.
 # Creating an Indexed Matrix to extract key variables
 Given the size of the CRSP data, it became necessary to create data structures to access the required variables quickly when simulating
 
-In order to maximize efficiency when simulating, a 2-D return matrix was created. The indices were the PERMNO (unique identifier) of the stock, and the columns are the dates. If the stock is available the its return value will be in the cell, if it is not available then the cell value will be nan. In order to get all of the returns of a group of PERMNO's in a given month, one can simply use fancy pandas indexing through full_ret_max[listofPermnos][date]. This will give the required returns very quickly.
+In order to maximize efficiency when simulating, a 2-D return matrix was created. The indices were the PERMNO (unique identifier) of the stock, and the columns are the dates. If the stock is available then its return value will be in the cell, if it is not available then the cell value will be nan. In order to get all of the returns of a group of PERMNO's in a given month, one can simply use fancy pandas indexing through full_ret_max.loc[listofPermnos,date]. This will give the required returns very quickly.
 
 Other matrices, such as an age matrix and a size matrix were created to extract other variables in a quick fashion.
 
